@@ -2,8 +2,8 @@ import { Button } from "@/components/ui/button";
 import { ArrowDown, Github, Linkedin } from "lucide-react";
 
 export const Hero = () => {
-  const scrollToContact = () => {
-    const element = document.getElementById("contact");
+  const scrollToProjects = () => {
+    const element = document.getElementById("projects");
     element?.scrollIntoView({ behavior: "smooth" });
   };
 
@@ -15,20 +15,20 @@ export const Hero = () => {
       <div className="container mx-auto px-4 text-center relative z-10">
         <div className="fade-in">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-in">
-            John Doe
+            Developer Portfolio
           </h1>
           <div className="text-xl md:text-2xl text-white/90 mb-8 animate-slide-up">
-            <span className="block mb-2">Full-Stack Developer</span>
-            <span className="text-lg opacity-75">Websites • Android Apps • AI Agents</span>
+            <span className="block mb-2">Showcase of Professional Development Work</span>
+            <span className="text-lg opacity-75">Explore Projects • View Services • Get Inspired</span>
           </div>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center mb-12">
             <Button 
-              onClick={scrollToContact}
+              onClick={scrollToProjects}
               size="lg" 
               className="bg-white text-primary hover:bg-white/90 text-lg px-8 py-6 animate-glow"
             >
-              Hire Me
+              Explore Work
             </Button>
             
             <div className="flex gap-4">
