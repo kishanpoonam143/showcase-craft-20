@@ -9,8 +9,19 @@ export const Hero = () => {
 
   return (
     <section id="home" className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      <div className="absolute inset-0 hero-gradient opacity-90"></div>
-      <div className="absolute inset-0 bg-background/20"></div>
+      {/* Modern gradient background */}
+      <div className="absolute inset-0 hero-gradient"></div>
+      
+      {/* Animated geometric shapes */}
+      <div className="absolute inset-0">
+        <div className="absolute top-1/4 left-1/4 w-32 h-32 bg-white/10 rounded-full blur-xl animate-float"></div>
+        <div className="absolute top-1/3 right-1/3 w-24 h-24 bg-accent/20 rounded-full blur-lg animate-float" style={{ animationDelay: '1s' }}></div>
+        <div className="absolute bottom-1/3 left-1/3 w-20 h-20 bg-primary-variant/15 rounded-full blur-lg animate-float" style={{ animationDelay: '2s' }}></div>
+        <div className="absolute top-1/2 right-1/4 w-16 h-16 bg-white/5 rounded-full blur-md animate-float" style={{ animationDelay: '0.5s' }}></div>
+      </div>
+      
+      {/* Subtle overlay for better text readability */}
+      <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-background/10"></div>
       
       <div className="container mx-auto px-4 text-center relative z-10">
         <div className="fade-in">
