@@ -26,7 +26,7 @@ export const Hero = () => {
       <div className="container mx-auto px-4 text-center relative z-10">
         <div className="fade-in">
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 animate-fade-in">
-            Developer Portfolio
+            Developer Portfolio 
           </h1>
           <div className="text-xl md:text-2xl text-white/90 mb-8 animate-slide-up">
             <span className="block mb-2">Showcase of Professional Development Work</span>
